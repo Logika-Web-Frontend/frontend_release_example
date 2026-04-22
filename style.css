@@ -1,0 +1,59 @@
+/* ==========================================
+   LogikaShop - Мінімальні кастомні стилі
+   (Максимально використовуємо Bootstrap)
+   ========================================== */
+
+/* Шрифт */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero-секція */
+.hero-section {
+    background:  #002859 url('img/hector-martinez-EG49vTtKdvI-unsplash.jpg') center/cover no-repeat;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Кнопка кошика - hover */
+#cartBtn:hover {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+/* Кнопки категорій */
+.category-btn.active {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+/* Overflow для зображень */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+        text-align: center;
+    }
+}
