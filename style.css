@@ -8,6 +8,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-brand img {
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.04);
+    filter: drop-shadow(0 4px 10px rgba(255, 193, 7, 0.35));
+}
+
 /* Hero-секція */
 .hero-section {
     background:  #002859 url('img/hector-martinez-EG49vTtKdvI-unsplash.jpg') center/cover no-repeat;
@@ -30,6 +39,15 @@ body {
     object-fit: cover;
 }
 
+.btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.add-to-cart-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+}
+
 
 /* Кнопка кошика - hover */
 #cartBtn:hover {
@@ -45,6 +63,37 @@ body {
     color: #212529 !important;
 }
 
+.category-btn:not(.active):hover {
+    transform: translateY(-2px);
+}
+
+footer a.text-white {
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+footer a.text-white:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px) scale(1.08);
+}
+
+#cartItems .card {
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+#cartItems .card:hover {
+    transform: translateX(4px);
+    background-color: #f8f9fa;
+}
+
+#checkoutCard {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#checkoutCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
 /* Overflow для зображень */
 .overflow-hidden {
     overflow: hidden;
@@ -56,4 +105,11 @@ body {
         padding: 40px 0;
         text-align: center;
     }
+}
+.product-card {
+  transition: all 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
